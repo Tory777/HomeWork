@@ -10,6 +10,25 @@
 }
 
 
+Part I
+
+.active + h2 {
+  background-color: var(--color_2)
+}
+
+div span~h2{
+  background-color: var(--color_3)
+}
+
+div+h2{
+  background-color: var(--color_4)
+}
+
+
+
+
+Part II
+
 a[href*="about"]{
   background-color: var(--color_6);
 }
@@ -33,3 +52,9 @@ p:not([class]){
 *[data-href~="highlight_me"]{
   text-decoration: underline;
 }
+
+
+Part III
+
+
+
