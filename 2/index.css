@@ -59,8 +59,8 @@ p:not([class]){
 
 Part III
 
-a[class*="www"], a:visited{
-background-color: var(--color_6);
+a.www:link, a.www:visited{
+			color: var(--color_6);
 }
 
 a:active a:not([class*="www"]){
