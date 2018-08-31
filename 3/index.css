@@ -1,0 +1,238 @@
+@font-face{
+
+font-family: 'Gabriela';
+
+src: url('../fonts/Gabriela-Bold.ttf');
+
+src: url('../fonts/Gabriela-Bold.eot?iefix') format('otf');
+
+font-weight: normal;
+
+font-style: normal;
+
+}
+
+
+
+
+
+body {
+    font: 14px 'Verdana';
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container{
+	width: 900px;
+	height: 100%;
+	padding: 0 50px;
+	margin-top: 50px;
+
+}
+
+.header{
+	height: 66px;
+	background: #ff3300;
+	
+	}
+
+#logo{
+	float: left;
+	margin-left: 143px;
+	margin-top: 3px;
+	
+	color: #000000;
+}
+
+.more{
+	color: #000000;
+	font-family: Gabriela;
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 30px;
+	text-decoration: underline;
+	margin-left: 10px;
+}
+
+#nav{
+	height:66px;
+}
+
+ul {
+    display: block;
+    margin: 0;
+	margin-right: 122px;
+    padding: 0;
+    list-style: none;
+	font-family: Gabriela;
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+ul.menu > li {
+    float: right;
+    position: relative;
+	top: 0;
+	right: 0;
+	width: 106px;
+	
+}
+ul.menu > li > a {
+    display: block;
+    padding: 15px;
+    color: white;
+    background-color: #ff3300;
+    text-decoration: none;
+}
+ul.menu > li > a:hover {
+    background-color: #333333;
+	height:66px;
+	
+	
+}
+ul.submenu {
+    display: none;
+    position: absolute;
+    width: 210px;
+    top: 66px;
+    left: 0;
+ 
+	background-color: #333333;
+}
+ul.submenu > li {
+    display: block;
+}
+ul.submenu > li > a {
+    display: block;
+    padding: 10px;
+    color: white;
+
+    text-decoration: none;
+}
+ul.submenu > li > a:hover {
+    text-decoration: underline;
+}
+
+
+ul.menu > li:hover > ul.submenu {
+    display: block;
+}
+
+.content{
+
+	vertical-align:middle; 
+	width:900px; 
+	text-align:center;
+	box-shadow:0 0 0 0;
+	padding:10pt;
+}
+
+.ins{
+	color: #fe470f;
+	font-family: Gabriela;
+	font-size: 41px;
+	font-weight: bold;
+	line-height: 32px;
+}
+
+.col{
+	margin:20pt;
+	padding:10pt;
+	
+	width:170px;
+	height:200px;
+	display:inline-block;
+	vertical-align: middle;
+	
+	color: #333333;
+	font-family: Gabriela;
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 25px;
+	}
+input{
+	width: 176px;
+	height: 50px;
+	background-color: #fe470f;
+	border: none;
+	color: #ffffff;
+	font-family: Gabriela;
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 32px;
+}
+
+	
+.text {
+	position: relative;
+	
+	height: 400px;
+	color: #333333;
+	font-family: Gabriela;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 20px;
+	margin: 0 100px;
+}	
+.l{
+	float: left;
+	width: 340px;
+	
+	}
+
+.r{
+	float: right;
+	width: 340px;
+}
+@font-face{
+
+font-family: 'Muller';
+
+src: url('../fonts/Muller-Bold.otf');
+
+src: url('../fonts/Mullet-Bold.eot?iefix') format('otf');
+
+font-weight: normal;
+
+font-style: normal;
+
+}
+
+
+.footer p{
+	
+	
+	width: px;
+	height: 50px;
+	background-color: #fe470f;
+	border: none;
+	color: #ffffff;
+	font-family: Gabriela;
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 32px;
+	padding-left: 140px;
+}
+span{
+	color: #ffffff;
+	font-family: Gabriela;
+	font-size: 15px;
+	font-weight: bold;
+	font-style: italic;
+	line-height: 32px;
+	
+	padding-left: 200px;
+}
+
+.arrow{
+	position: fixed;
+	right:350px;
+	bottom: 50px;
+}
