@@ -13,34 +13,31 @@ font-style: normal;
 }
 
 
-
-
-
 body {
     font: 14px 'Verdana';
-    margin-left: auto;
-    margin-right: auto;
+}
+
+#wrapper{
+	width: 900px;
+	margin: 0 auto;
 }
 
 .container{
-	width: 900px;
 	height: 100%;
-	padding: 0 50px;
 	margin-top: 50px;
-
+	
 }
 
 .header{
 	height: 66px;
-	background: #ff3300;
-	
-	}
+	background: #fe470f;
+}
+
 
 #logo{
 	float: left;
-	margin-left: 143px;
+	margin-left: 130px;
 	margin-top: 3px;
-	
 	color: #000000;
 }
 
@@ -67,8 +64,7 @@ ul {
 	font-family: Gabriela;
 	font-size: 21px;
 	font-weight: bold;
-	line-height: 30px;
-	text-transform: uppercase;
+	
 }
 ul:after {
     display: block;
@@ -81,14 +77,19 @@ ul.menu > li {
     position: relative;
 	top: 0;
 	right: 0;
-	width: 106px;
-	
+	width: 106px;	
 }
+
+ul.menu li:first-child {
+	width: 130px;
+}
+	
+
 ul.menu > li > a {
     display: block;
     padding: 15px;
     color: white;
-    background-color: #ff3300;
+    background-color: #fe470f;
     text-decoration: none;
 }
 ul.menu > li > a:hover {
@@ -108,6 +109,7 @@ ul.submenu {
 }
 ul.submenu > li {
     display: block;
+	vertical-align: top;
 }
 ul.submenu > li > a {
     display: block;
@@ -125,13 +127,13 @@ ul.menu > li:hover > ul.submenu {
     display: block;
 }
 
+
 .content{
 
 	vertical-align:middle; 
 	width:900px; 
 	text-align:center;
 	box-shadow:0 0 0 0;
-	padding:10pt;
 }
 
 .ins{
@@ -140,23 +142,34 @@ ul.menu > li:hover > ul.submenu {
 	font-size: 41px;
 	font-weight: bold;
 	line-height: 32px;
+	margin-top: 85px;
+	margin-left: 50px;
+}
+
+.column{
+	padding: 50px 50px 0 120px;
+	width: 900px;
 }
 
 .col{
-	margin:20pt;
-	padding:10pt;
-	
-	width:170px;
 	height:200px;
 	display:inline-block;
 	vertical-align: middle;
-	
 	color: #333333;
 	font-family: Gabriela;
 	font-size: 21px;
 	font-weight: bold;
 	line-height: 25px;
+	width: calc(25% - 20px);
+	float: left;	
 	}
+	
+.col:nth-child(2){
+	margin-left: 40px;
+	margin-right: 40px;
+	
+}
+	
 input{
 	width: 176px;
 	height: 50px;
@@ -172,67 +185,57 @@ input{
 	
 .text {
 	position: relative;
-	
-	height: 400px;
+	float:left;
+	height: 300px;
 	color: #333333;
 	font-family: Gabriela;
 	font-size: 16px;
 	font-weight: bold;
 	line-height: 20px;
-	margin: 0 100px;
+	padding: 0 70px 0 110px;
+	width: 740px;
+	margin-top: 70px;
+
 }	
-.l{
+.left, .right{
+	vertical-align: middle;
+	width: calc(50% - 17px);
 	float: left;
-	width: 340px;
-	
+	top: 50px;
 	}
 
-.r{
-	float: right;
-	width: 340px;
-}
-@font-face{
-
-font-family: 'Muller';
-
-src: url('../fonts/Muller-Bold.otf');
-
-src: url('../fonts/Mullet-Bold.eot?iefix') format('otf');
-
-font-weight: normal;
-
-font-style: normal;
-
+.left{
+	margin-right: 17px;
 }
 
+.footer{
+	position: relative;
+	float:left;
+	width: 900px;
+	min-height: 100px;
+}
 
 .footer p{
-	
-	
-	width: px;
-	height: 50px;
 	background-color: #fe470f;
 	border: none;
 	color: #ffffff;
 	font-family: Gabriela;
-	font-size: 21px;
-	font-weight: bold;
-	line-height: 32px;
-	padding-left: 140px;
+	font-size: 18px;
+	line-height: 45px;
+	padding-left: 120px;
 }
 span{
 	color: #ffffff;
 	font-family: Gabriela;
 	font-size: 15px;
-	font-weight: bold;
 	font-style: italic;
 	line-height: 32px;
-	
-	padding-left: 200px;
+	padding-left: 150px;
 }
 
 .arrow{
 	position: fixed;
-	right:350px;
-	bottom: 50px;
+	right:70px;
+	bottom: 20px;
+	z-index: 1; 
 }
