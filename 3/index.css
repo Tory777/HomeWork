@@ -1,0 +1,241 @@
+@font-face{
+
+font-family: 'Gabriela';
+
+src: url('../fonts/Gabriela-Bold.ttf');
+
+src: url('../fonts/Gabriela-Bold.eot?iefix') format('otf');
+
+font-weight: normal;
+
+font-style: normal;
+
+}
+
+
+body {
+    font: 14px 'Verdana';
+}
+
+#wrapper{
+	width: 900px;
+	margin: 0 auto;
+}
+
+.container{
+	height: 100%;
+	margin-top: 50px;
+	
+}
+
+.header{
+	height: 66px;
+	background: #fe470f;
+}
+
+
+#logo{
+	float: left;
+	margin-left: 130px;
+	margin-top: 3px;
+	color: #000000;
+}
+
+.more{
+	color: #000000;
+	font-family: Gabriela;
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 30px;
+	text-decoration: underline;
+	margin-left: 10px;
+}
+
+#nav{
+	height:66px;
+}
+
+ul {
+    display: block;
+    margin: 0;
+	margin-right: 122px;
+    padding: 0;
+    list-style: none;
+	font-family: Gabriela;
+	font-size: 21px;
+	font-weight: bold;
+	
+}
+ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+ul.menu > li {
+    float: right;
+    position: relative;
+	top: 0;
+	right: 0;
+	width: 106px;	
+}
+
+ul.menu li:first-child {
+	width: 130px;
+}
+	
+
+ul.menu > li > a {
+    display: block;
+    padding: 15px;
+    color: white;
+    background-color: #fe470f;
+    text-decoration: none;
+}
+ul.menu > li > a:hover {
+    background-color: #333333;
+	height:66px;
+	
+	
+}
+ul.submenu {
+    display: none;
+    position: absolute;
+    width: 210px;
+    top: 66px;
+    left: 0;
+ 
+	background-color: #333333;
+}
+ul.submenu > li {
+    display: block;
+	vertical-align: top;
+}
+ul.submenu > li > a {
+    display: block;
+    padding: 10px;
+    color: white;
+
+    text-decoration: none;
+}
+ul.submenu > li > a:hover {
+    text-decoration: underline;
+}
+
+
+ul.menu > li:hover > ul.submenu {
+    display: block;
+}
+
+
+.content{
+
+	vertical-align:middle; 
+	width:900px; 
+	text-align:center;
+	box-shadow:0 0 0 0;
+}
+
+.ins{
+	color: #fe470f;
+	font-family: Gabriela;
+	font-size: 41px;
+	font-weight: bold;
+	line-height: 32px;
+	margin-top: 85px;
+	margin-left: 50px;
+}
+
+.column{
+	padding: 50px 50px 0 120px;
+	width: 900px;
+}
+
+.col{
+	height:200px;
+	display:inline-block;
+	vertical-align: middle;
+	color: #333333;
+	font-family: Gabriela;
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 25px;
+	width: calc(25% - 20px);
+	float: left;	
+	}
+	
+.col:nth-child(2){
+	margin-left: 40px;
+	margin-right: 40px;
+	
+}
+	
+input{
+	width: 176px;
+	height: 50px;
+	background-color: #fe470f;
+	border: none;
+	color: #ffffff;
+	font-family: Gabriela;
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 32px;
+}
+
+	
+.text {
+	position: relative;
+	float:left;
+	height: 300px;
+	color: #333333;
+	font-family: Gabriela;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 20px;
+	padding: 0 70px 0 110px;
+	width: 740px;
+	margin-top: 70px;
+
+}	
+.left, .right{
+	vertical-align: middle;
+	width: calc(50% - 17px);
+	float: left;
+	top: 50px;
+	}
+
+.left{
+	margin-right: 17px;
+}
+
+.footer{
+	position: relative;
+	float:left;
+	width: 900px;
+	min-height: 100px;
+}
+
+.footer p{
+	background-color: #fe470f;
+	border: none;
+	color: #ffffff;
+	font-family: Gabriela;
+	font-size: 18px;
+	line-height: 45px;
+	padding-left: 120px;
+}
+span{
+	color: #ffffff;
+	font-family: Gabriela;
+	font-size: 15px;
+	font-style: italic;
+	line-height: 32px;
+	padding-left: 150px;
+}
+
+.arrow{
+	position: fixed;
+	right: 210px;
+	bottom: 100px;
+	z-index: 1; 
+}
