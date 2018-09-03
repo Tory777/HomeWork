@@ -53,92 +53,74 @@ body {
 
 #nav{
 	height:66px;
-}
-
-ul{
-    display: block;
-    margin: 0;
-	margin-right: 122px;
-    padding: 0;
-    list-style: none;
+	color: #ffffff;
 	font-family: Gabriela;
 	font-size: 21px;
 	font-weight: bold;
-	
+	line-height: 30px;
 }
-.submenu {
+
+ol{
     display: none;
+    margin-top: 5px;
+    margin-left: -22px;
     position: absolute;
-    width: 210px;
-    top: 66px;
-    margin-left: 0;
- 	background-color: #333333;
-	color: white;
-}
-
-ul.menu > li {
-    float: right;
-    position: relative;
-	top: 0;
-	right: 0;
-	width: 106px;
-	
-}
-
-ul.menu > li > a:hover {
     background-color: #333333;
-	height:66px;
-}
-
-ul:after {
-    display: block;
-    content: ' ';
-    clear: both;
-    float: none;
-}
-
-
-ul.menu li:first-child {
-	width: 130px;
-}
-	
-
-ul.menu > li > a {
-    display: block;
-    padding: 15px;
-    color: white;
-    background-color: #fe470f;
-    text-decoration: none;
-}
-
-ol.submenu li {
-    display: block;
-	vertical-align: top;
 	text-align: left;
 }
 
-.submenu > li > a {
+ol:nth-child(2) {
+	width: 230px;
+}
+
+
+.menu{
+    float: right;
+    margin-right: 15%;
+    position: relative;
+    font-size: 21px;
+    font-weight: bold;
+	text-transform: uppercase;
+}
+
+.menu li {
+    float: left;
+    list-style: none;
+    padding: 30px 22px 19px 22px;
+    text-transform: uppercase;
+}
+
+.menu li:hover{
+    background-color: #333333;
+}
+
+.menu li:hover>ol{
     display: block;
-    padding: 10px;
-    color: white;
+}
+
+.menu ol>li:hover{
+    background-color: #808080;
+}
+
+.menu ol>li{
+    float: none;
+    padding: 9px 22px 9px;
+    list-style: decimal inside;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.menu li a {
     text-decoration: none;
+    color: #ffffff;
 }
 
-.submenu > li > a:hover {
-    text-decoration: underline;
-	color: #F08080;
-}
-
-/*Проверка применения стиля зеленой рамкой. Нумерация почему то слетает :(((((((*/
-.submenu > li:hover{
-    list-style-type: decimal;
-	border: solid green;
-}
-
-.menu > li:hover > ol{
+.clear:after {
+    content: '';
     display: block;
-	
-} 
+    height: 0;
+    clear: both;
+}
 
 
 .content{
@@ -240,7 +222,7 @@ button:hover {
 
 .footer{
 	background-color: #fe470f;
-	height: 50px;
+	min-height: 50px;
 	position: relative;
 	float: left;
 	width: 100%;
@@ -275,10 +257,12 @@ f_cont:after{
 }
 
 
-
 @media screen and (min-width: 320px) and (max-width: 460px){ 
 
-	
+	/*.container {
+		width: 100%; 
+		text-align: center;
+		}*/
 	header{
 		margin: 0;
 		padding: 0;
@@ -306,10 +290,8 @@ f_cont:after{
 		
 	.ins{
 		margin-left: 0px;
-		
 		}
-
-		
+			
 	.column{
 		width:100%;
 		margin: 0;
@@ -320,7 +302,7 @@ f_cont:after{
 	.col{
 		width: calc(100% - 2px);
 		float: left;
-		margin-bottom: 30px;
+		margin-bottom: 60px;
 		padding: 0;
 		display: block;		
 	}
@@ -335,8 +317,9 @@ f_cont:after{
 		min-width: 200px;
 		margin: 0;
 		padding: 0;
-		margin-top: 6%;
-		margin-bottom: 10%px;
+		margin-top: 3%;
+		height: 200px;
+		margin-bottom:5%;
 	}
 	
 	.left{
@@ -357,32 +340,24 @@ f_cont:after{
 		display: none;
 	}
 	
-	footer{
-		margin-top: 10%;
-	}
 	.f_cont{
-		position: relative;
-		float: left;
-		margin-bottom: 0;
-		padding-bottom:0;}
-
-	.f_cont p{
-		position: relative;
-		float: left;
-		margin-bottom: 0;
-		padding-bottom:0;
-	}
+		padding-left: 3%;
+		}
 		
+	.f_cont p{
+		float:left;
+
+		}
+	
 	span{
-		position: relative;
 		float: right;
-		margin-bottom: 0;
-		padding-bottom:0;
-	}
+		padding-right: 3%;
+		}
+	
 	.arrow{
 		display: none;
-	}
-				
+			}
+	
  }
 
 
