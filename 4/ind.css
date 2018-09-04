@@ -14,6 +14,7 @@
 	}
  }
  
+ 
  /*From Tablet Portrait to Tablet Landscape*/
 
  @media screen and (min-width: 768px) and (max-width: 960px){ 
@@ -32,9 +33,10 @@
  
  @media screen and (min-width: 768px) and (max-width: 960px){ 
 	body main div.three div.colored{
-		width: calc(100% - 5px);
+		width: 100%;
 		float: left;		
 	}
+ }
 	
 @media screen and (min-width: 768px) and (max-width: 960px){
  	body main div.fourth div.colored{
@@ -57,6 +59,7 @@
 		float: left;		
 	}
  }
+ 
  
  /*From Tablet Landscape to medium desktop*/
  
@@ -85,6 +88,7 @@
 		width: calc(33.3% - 5px);
 		float: left;		
 	}
+ }
 	
  @media screen and (min-width: 960px) and (max-width: 1200px){
  	body main div.fourth div.colored{
@@ -112,7 +116,7 @@
 	}
  }
  
- /*From medium desktop to large desktop*/
+  /*From medium desktop to large desktop*/
  
 /*1 block -> 2 elements in a row: all equal width, so it will have 2 rows width: 50%
 2 block -> 2 elements in a row: all equal width
@@ -148,7 +152,8 @@
  @media screen and (min-width: 1200px) and (max-width: 1800px){
  	body main div.fourth div.colored{
 		width: calc(35% - 5px);
-		float: left;}
+		float: left;
+	}
 		
 	body main div.fourth div.colored:nth-child(2){
 		width: calc(30% - 5px);
@@ -161,15 +166,20 @@
 }
  
  @media screen and (min-width: 1200px) and (max-width: 1800px){ 
+		
 	body main div.fifth div.colored{
 		width: calc(33% - 5px);
-		float: left;		
-	}
+		float: left;
+		margin: 0 auto;}
+	body main div.fifth div.colored:nth-child(4){
+		margin-left: 17%;}
+	body main div.fifth div.colored:nth-child(5){
+		margin-right: 17%;}
+	
 }
  
  
 /*From large Desktop
-
 1 block -> 4 elements in a row: all equal width
 2 block -> 2 elements in a row: all equal width
 3 block -> 3 elements in a row: 1 -> 25%, 2 and 3 -> 25%
@@ -213,12 +223,9 @@
 		float: left;}
 }
  
+   
  
  
- 
- 
- 
-
     .block {
       margin-bottom: 10px;
     }
