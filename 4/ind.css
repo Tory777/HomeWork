@@ -202,18 +202,15 @@
 		width: calc(25% - 5px);
 		float: left;}
 		
-	}
 	body main div.fourth div.colored:nth-child(3){
 		width: calc(50% - 5px);
-		float: left;
-	}
+		float: left;}
 }
  
  @media screen and (min-width: 1800px){ 
 	body main div.fifth div.colored{
 		width: calc(20% - 5px);
-		float: left;		
-	}
+		float: left;}
 }
  
  
