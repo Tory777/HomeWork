@@ -1,0 +1,45 @@
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+   text-align: center;
+}
+* {
+  border: solid black 1px;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.logo{
+  background: orange;
+  height: 98px; /*Logo should be 100px*100px, but there are borbers 2*1px+2*1px*/
+  width: 98px;
+ }
+.menu{  
+  background: red;
+  height: 98px;
+  width: calc(100% - 100px - 2*1px);
+order:;}
+.nf{  
+  background: brown;
+  height: 298px;
+  width: 98px;/*News feed's width should be 100px, but there are borbers 2*1px*/
+}
+.list{
+  background: orange;
+  height: 298px;
+  width: calc(65% - 2*1px);
+}
+.nav{
+  background: brown;
+  height: 448px;
+  width: calc(100% - 2*1px - 65% - 100px);
+  margin-top:0;
+  align-self:flex-start;
+}
+.footer{
+  background: orange;
+  height: 148px;
+  width: calc(65% + 100px - 2*1px);
+  align-self: stretch;
+  margin-top: -150px;
+}
