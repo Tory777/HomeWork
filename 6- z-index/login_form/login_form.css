@@ -43,7 +43,7 @@ span{
 .img{
 	position: absolute;
 	z-index: 100;
-	margin-top: -65%;
+	margin-top: -800px;
 	margin-left: 46%;
 	height: 40px;
 	width: 50px;
@@ -58,7 +58,7 @@ button{
 	height: 30px;
 	position: absolute;
 	z-index: 100;
-	margin-top: -34%;
+	margin-top: -430px;
 	margin-left: 42%;
 	text-align: center;
 	border-style: none;
