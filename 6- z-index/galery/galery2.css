@@ -1,0 +1,42 @@
+
+.wrapper, .wrapper2{
+	background: black;
+	text-align: right;
+	padding-right: 100px;
+}
+	
+.big{
+	margin:10px 0 10px;
+}
+
+.hide{
+	position: absolute;
+	z-index: 1;
+	display: none;
+}
+
+.main{
+	padding-top: 10px 50px 10px;
+	display: block;   
+}
+
+.img{
+	display: inline-block;
+}
+
+.gal{
+	height: 90px;
+	padding-bottom: 10px;
+}
+
+.inline:hover .hide{
+	position: absolute;
+	z-index: 500;
+	display: block;
+	margin-top: -414px;
+	right: 108px;
+}
+
+.inline:hover .main{
+	display: none;
+}
