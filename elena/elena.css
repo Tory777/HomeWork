@@ -1,0 +1,253 @@
+@font-face{
+font-family: 'Belinda';
+src: url('../fonts/Belinda-Bold.ttf');
+src: url('../fonts/Belinda-Bold.eot?iefix') format('otf');
+src: url('../fonts/Belinda.eot'); /* IE9 Compat Modes */
+src: url('../fonts/Belinda.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+url('../fonts/Belinda.woff') format('woff'), /* Modern Browsers */
+url('../fonts/Belinda.ttf') format('truetype'), /* Safari, Android, iOS */
+url('../fonts/Belinda.svg#svgFontName') format('svg'); /* Legacy iOS */
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face{
+font-family: 'Open Sans';
+src: url('../fonts/Open Sans.ttf');
+src: url('../fonts/Open Sans.eot?iefix') format('otf');
+src: url('../fonts/Open Sans.eot'); /* IE9 Compat Modes */
+src: url('../fonts/Open Sans.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+url('../fonts/Open Sans.woff') format('woff'), /* Modern Browsers */
+url('../fonts/Open Sans.ttf') format('truetype'), /* Safari, Android, iOS */
+url('../fonts/Open Sans.svg#svgFontName') format('svg'); /* Legacy iOS */
+font-weight: semi-bold;
+font-style: normal;
+}
+
+@font-face{
+font-family: 'Ubuntu';
+src: url('../fonts/Ubuntu.ttf');
+src: url('../fonts/Ubuntu.eot?iefix') format('otf');
+src: url('../fonts/Ubuntu.eot'); /* IE9 Compat Modes */
+src: url('../fonts/Ubuntu.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+url('../fonts/Ubuntu.woff') format('woff'), /* Modern Browsers */
+url('../fonts/Ubuntu.ttf') format('truetype'), /* Safari, Android, iOS */
+url('../fonts/Ubuntu.svg#svgFontName') format('svg'); /* Legacy iOS */
+font-weight: normal;
+font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html{
+	color: #787b80;
+	font-family: "PT Sans";
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.container {
+	width: 80%;
+    margin: 5% auto;
+    text-align: center;
+	
+	}
+
+.header{
+	height: 590px;
+	width: 100%;
+	color: white;
+	background-image: url(images/bg.png);
+	background-repeat: no-repeat;
+	text-align: center;
+
+	}
+
+.wrapper{
+	min-width: 800px;
+	min-height: 630px;
+	width: 100%;
+	color:red;
+	margin: 0 auto;
+	text-align: center;
+	border: solid green 1px;
+	
+}
+
+.logo{
+	width: 109px;
+	height: 44px;
+	color: #ffffff;
+	font-family: Belinda;
+	font-size: 52px;
+	font-weight: 400;
+	line-height: 24px;
+
+	margin-top: 10%;
+	margin-left: 30%;
+}
+
+h1{
+	width: 600px;
+	height: 60px;
+	color: #ffffff;
+	font-family: Ubuntu;
+	font-size: 53px;
+	font-weight: 700;
+	line-height: 24px;
+	text-transform: uppercase;
+
+	margin-left: 25%;
+}
+
+	
+.head1{
+	color: white;
+	text-align: center;
+	width: 482px;
+	height: 100px;
+	color: #ffffff;
+	font-family: "PT Sans";
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 24px;
+	text-transform: uppercase;	
+	margin-left: 30%;
+
+	background: blue;
+	display: block;
+
+}
+
+
+.nav{
+	text-align: center;
+	/*width: 330px;
+	margin-left: 10px;	
+	margin-top:62px;*/
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+
+
+	height: 9px;
+	color: #ffffff;
+	font-family: "Open Sans, semibold";
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 24px;
+	text-transform: uppercase;
+
+	margin: 50px 50px;
+}
+
+
+li {
+	list-style-type: none;
+}
+
+button{
+	width: 235px;
+	height: 48px;
+	background-color: #50c3af;
+	color: #ffffff;
+	border: none;
+	border-radius: 25px;
+
+}
+
+margin-top: 50px;
+
+.small {
+	width: 180px;
+}
+.grey_button{
+	width: 98px;
+	height: 35px;
+	background-color: #d2d5da;
+}
+
+
+
+
+.features, .features2, .noname{
+	height:286px;
+	margin-left:110px;
+	margin-right: 110px;
+	display: flex;
+  	flex-direction: row;
+  	flex-flow: row wrap;
+}
+/*
+.features2>p{
+	height:286px;
+	margin-left:110px;
+	margin-right: 110px;
+	display: flex;
+  	flex-direction: row;
+  	flex-flow: row wrap;
+}*/
+
+.features2>.col{
+width: 240px;
+
+}
+
+.col{
+	margin-top: 62px;
+	width:165px;
+	flex: auto;
+}	
+
+.content{
+	
+	margin:0;
+
+	width: 990px;
+	height: 328px;
+	background-color: #eaeaeb;
+	opacity: 0.6;
+
+}
+
+
+	width:1600px;
+	margin: auto;
+	text-align:center;
+}
+
+.social{
+	display: flex;
+	flex-direction: row;
+	align-content:center;
+	width:1000px;
+	margin-left:620px;
+}
+
+.social li{
+	padding-left:5px;
+}
+.footer{
+	background-color: #F5F5F5;
+	height:130px;
+	float: left;
+	clear:both;
+}
+.contact{
+	width:1600px;
+	margin-left:400px;
+	display: flex;
+	flex-direction: row;
+}
+
+.contact li{
+	padding-left:40px;
+	padding-top:40px;
+}
