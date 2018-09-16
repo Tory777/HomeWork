@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 14px 'Verdana';
+	background: #D3D3D3;
+}
+
+#wrapper{
+	width: 900px;
+	height: 300px;
+	margin: 20px auto;
+	text-align: center;
+	background: white;
+	border: 10px solid black;
+	box-shadow: 0 0 0 2px white,
+				0 0 0 3px grey;
+}	
+
+.pos{
+	position: relative;
+	left: 0;
+}
+
+button{
+	height: 50px;
+	width: 180px;
+	border-radius: 1px;
+	width: calc(20% - 5px);
+	float: left;
+}
+
+img{
+	height: 30px;
+	margin-right: 5px;
+}
+
+.con{
+	width:65%;
+	position:absolute;
+	display: none;
+	z-index: 1;
+	background: white;
+}
+	
+.con_start{
+	position:absolute;
+	display: block;
+	z-index: 2;
+	margin-top: 10px;
+	margin-left: 0px;
+	box-sizing: border-box;
+	padding-top: 20px;
+} /*Если поменять местами с .con - не отображается. почему?*/
+		
+.but:hover .con{
+	background-color: white;
+	display: block;
+	z-index: 100;
+	position:absolute;
+	display: block;
+	margin-top: 30px;
+	right: 200px;
+	left:195px;
+}
+
+.main{
+	background: white;
+	border-bottom: white;
+	border-left: none;
+}
