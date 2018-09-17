@@ -28,18 +28,23 @@ hr{
 	margin: 0 20px;
 }
 
-p{
-	line-height: 50px;
+input, span{
+	line-height: 30px;
 	margin-left: 20px;
 	font-size: 15px;
 	font-family: Century Gothic, sans‑serif;
-}
-
-span{
 	padding-left: 20px;
 }
 
-	
+input{
+	background: #86AFB2;
+	border: none;
+}
+
+img{
+	margin-left: 8%;
+}	
+
 .img{
 	position: absolute;
 	z-index: 100;
