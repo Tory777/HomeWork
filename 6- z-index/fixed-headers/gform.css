@@ -34,7 +34,7 @@ body {
 
 .form{
         margin-top: 0px;
-        margin-bottom: 0px;     
+        margin-bottom: 0px;       
 }
 
 .header{
@@ -46,18 +46,25 @@ body {
 	box-sizing: border-box;
 }
 
-ul{
-	list-style-type: none;
+form{
 	margin-left: 10px;
 }
 
-li{
+input{
 	margin-top: 40px;
 	color: #A9A9A9;
+	border: none;
+	height: 25px;
+	width: 300px;
+	padding-left: 5px;
+}
+
+input:focus{
+	box-shadow: 0 0 1px 2px grey;
 }
 
 hr{
-	margin-top: 3px;
+	margin-top: 2px;
 	margin-right: 10px;
 }
 
