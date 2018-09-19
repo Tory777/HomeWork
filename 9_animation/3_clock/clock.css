@@ -1,0 +1,66 @@
+@keyframes rotate {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.clock {
+  border-radius: 50%;
+  border: 2px dashed #E6E6FA;
+  background: #215847;
+  height: 300px;
+  width: 300px;
+  position: relative;
+  margin: 10% 40%;
+}
+
+.seconds,.minutes,.hours {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.hours {
+  background: #C71585;
+  height: 75px;
+  width: 5px;
+  left: 48.75%;
+  position: absolute;
+  top: 75px;
+  transform-origin: 50% 100%;
+}
+
+.minutes {
+  background: #DB7093;
+  height: 90px;
+  width: 3px;
+  left: 49%;
+  position: absolute;
+  top: 60px;
+  transform-origin: 50% 100%;
+}
+
+.seconds {
+  background: #FFC0CB;
+  height: 100px;
+  width: 1px;
+  left: 49.5%;
+  position: absolute;
+  top: 50px;
+  transform-origin: 50% 100%;
+  z-index: 10;
+}
+
+.hours {
+  animation: rotate 43200s infinite steps(60);
+}
+
+.minutes {
+  animation: rotate 3600s infinite steps(60);
+}
+
+.seconds {
+  animation: rotate 60s infinite steps(60);
+}
