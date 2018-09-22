@@ -63,9 +63,8 @@ button {
     height: 100px;
     width: 300px;
     position: absolute;
-    top: 50px;
+    top: 40%;
     right: 0;
-    bottom: 50px;
     left: 0;
     margin: auto;
     background: pink;
