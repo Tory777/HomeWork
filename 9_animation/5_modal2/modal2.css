@@ -1,6 +1,6 @@
 @keyframes show {
   0% {
-     margin-top: -450px;
+     margin-top: -550px;
   }
 5% {
     margin-top: 50px;
@@ -13,7 +13,7 @@
 }
   @keyframes show2 {
   0% {
-     margin-top: -450px;
+     margin-top: -650px;
   }
 5% {
     margin-top: 0px;
@@ -78,7 +78,7 @@ button {
     position: absolute;
     left: 100px;
     margin: auto;
-    margin-top: -350px;
+    margin-top: -550px;
     top: -50%;
     width: 100%;
 }
@@ -87,7 +87,7 @@ button {
     background: #fff;
     left: 0;
     margin: auto;
-    margin-top: -450px;
+    margin-top: -550px;
     position: absolute;
     top: -50%;
     width: 100%;
